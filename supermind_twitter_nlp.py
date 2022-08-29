@@ -21,7 +21,6 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-import pprint
 import re
 
 
@@ -84,8 +83,6 @@ texts=data_df.content.values.astype(str).tolist()
 texts=','.join(texts)
 texts=texts.lower()
 
-texts
-
 # Removal of punctuations, mail id, url links ,#,@
 
 def clean_text(text):
@@ -101,8 +98,6 @@ def clean_text(text):
     txt = ' '.join(txt)
     return txt
 text = clean_text(texts)
-
-text
 
 # creating dictionary from abbreviation dataset 
 
@@ -136,7 +131,6 @@ def corpus(df1,df2):
 crypto_corpus=corpus(abb_df,def_df)
 
 crypto_corpus=clean_text(crypto_corpus)
-crypto_corpus
 
 """### Spacy Pos-Tag"""
 
@@ -173,7 +167,7 @@ all_nouns = list(noun_chunks(data1))
 
 # Loading Bert Model from Hugging face.
 
-model     = TFAutoModel.from_pretrained('distilroberta-base')
+model = TFAutoModel.from_pretrained('distilroberta-base')
 tokenizer = AutoTokenizer.from_pretrained('distilroberta-base')
 
 """Improvising to to reduce memory usage"""
@@ -204,7 +198,7 @@ crypto_tokens = tokenizer(crypto_corpus, padding=True ,max_length=1024,return_te
 crypto_embeddings = model(**crypto_tokens)['pooler_output'].numpy()
 
 """### Distance Measurement 
-- Cosine Similarity - similar values ranges close to 1 and independent values close to 0
+- Cosine Similarity - similar values ranges close to 1 and independent values ranges to 0
 """
 
 def Key_phrases(embed1,embed2,n,thresh):
