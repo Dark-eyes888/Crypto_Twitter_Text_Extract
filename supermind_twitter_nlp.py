@@ -219,7 +219,7 @@ def Key_phrases(embed1,embed2,n,thresh):
 crypto_phrases = Key_phrases(crypto_embeddings, noun_embeddings,10,  0.98)
 print(crypto_phrases)
 
-"""### Visualization of Extracted 
+"""### Visualization of Extracted Keywords
 
 """
 
