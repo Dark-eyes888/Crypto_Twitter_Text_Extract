@@ -223,3 +223,15 @@ plt.figure(figsize = (8, 8), facecolor = None)
 plt.imshow(wordcloud)
 plt.axis("off")
 
+
+# count of Noun corpus:  74572
+ count of distance-embeddings :  74572
+ max value for n for threshold 0.989  : 72738
+
+# count of Noun corpus:  74572
+# count of distance-embeddings :  74572
+# max value for n for threshold 0.989  : 72738
+# Keywords: ['packaged ethereum improvement proposal', 'sdt', ' actually huge liqudity', 'clear laws industry', 'data availability committee', 'undisputed market leader niche reliant specific subgraphs', 'natives', 
+#' 3ac solunavax', 'fantom1', 'real lobster', 'morefortunately supply decentralization terrible money management inability ship pos years', 
+#'dynamic reporting structure', '2020 sam centralized cryptocurrency exchange technology matures attention', '11k12k liquidation pressure', 
+#'curlyhaired altruist', 'mev', 'spectacle', 'always money', 'tax constant reminder', '“advance']
