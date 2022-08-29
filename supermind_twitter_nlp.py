@@ -224,9 +224,6 @@ plt.imshow(wordcloud)
 plt.axis("off")
 
 
-# count of Noun corpus:  74572
- count of distance-embeddings :  74572
- max value for n for threshold 0.989  : 72738
 
 # count of Noun corpus:  74572
 # count of distance-embeddings :  74572
