@@ -1,6 +1,6 @@
 ## Supermind_Twitter_NLP
 
-The repository extracts words used in the crypto world from Twittet tweets with the help of Huggingface Transformer - Roberta model.
+The repository extracts words used in the crypto world from Twitter with the help of Huggingface Transformer - Roberta model.
 
 ### subtasks:
 - Loading Data and important libraries
